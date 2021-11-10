@@ -1,5 +1,9 @@
 <template>
   <form class="home">
+    <div id="newer-version">
+      New version here: <a href="https://ernokstein.github.io/calkowlator/">https://ernokstein.github.io/calkowlator/</a>
+    </div>
+
     <div id="title">
       <h1>Calkowlator</h1>
       <a
@@ -92,6 +96,7 @@ export default {
   margin: 0 auto;
   display: grid;
   grid-template-areas:
+    "newer-version"
     "title"
     "inputs"
     "calculate"
@@ -99,6 +104,13 @@ export default {
   grid-template-columns: min-content;
   row-gap: 20px;
   column-gap: 50px;
+}
+#newer-version {
+  grid-area: newer-version;
+  font-size: 48px;
+  background-color: red;
+  color: white;
+  padding: 20px;
 }
 #title {
   grid-area: title;
